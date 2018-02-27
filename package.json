@@ -1,0 +1,7 @@
+{
+  "name": "outlierjoinery",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "^3.2.2"
+  }
+}
