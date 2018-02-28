@@ -1,7 +1,5 @@
-// frontend/packs/application.js
-import "./application.css";
-
-document.body.insertAdjacentHTML(
-  "afterbegin",
-  "Worlds most awesome woodworking website"
-);
+import "init";
+import "components/page/page";
+import "components/auth-form/auth-form";
+import "components/header/header";
+import "components/vision/vision";
