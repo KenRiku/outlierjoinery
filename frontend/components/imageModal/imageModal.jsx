@@ -1,8 +1,8 @@
 import React from 'react';
 import Lightbox from 'react-images';
+import './imageModal.css';
 
 class ImageModal extends React.Component {
-
   constructor(props) {
     super(props)
 
@@ -52,11 +52,7 @@ class ImageModal extends React.Component {
   }
 
   renderGallery() {
-    const images = [
-      { src: 'https://tinyurl.com/y9ymae8n' },
-      { src: 'https://tinyurl.com/y9ymae8n' },
-      { src: 'https://tinyurl.com/y8cuqbck' }
-    ];
+    const images = this.props.images;
 
     if (!images) return;
 
@@ -67,31 +63,24 @@ class ImageModal extends React.Component {
           key={i}
           onClick={(e) => this.openLightbox(i, e)}
         >
-          <img src={obj.src} />
+          <img className={this.props.class} src={obj.src} />
         </a>
       );
     });
 
     return (
-      <div>
+      <div className="gallery-flex-3">
         {gallery}
       </div>
     );
   }
-
-
-
 
   render() {
     return (
       <div className="sub-gallery-section">
         {this.renderGallery()}
         <Lightbox
-          images={[
-            { src: 'https://tinyurl.com/y9ymae8n' },
-            { src: 'https://tinyurl.com/y9ymae8n' },
-            { src: 'https://tinyurl.com/y8cuqbck' }
-          ]}
+          images={this.props.images}
           backdropClosesModal
           currentImage={this.state.currentImage}
           isOpen={this.state.lightboxIsOpen}
@@ -101,7 +90,7 @@ class ImageModal extends React.Component {
           onClickThumbnail={this.gotoImage}
           onClose={this.closeLightbox}
           preventScroll={this.props.preventScroll}
-          showThumbnails={this.props.showThumbnails}
+          showThumbnails={false}
           spinner={this.props.spinner}
           spinnerColor={this.props.spinnerColor}
           spinnerSize={this.props.spinnerSize}

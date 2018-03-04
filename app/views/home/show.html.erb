@@ -1,3 +1,13 @@
 <%= react_component('Hero') %>
 <%= react_component('Vision') %>
-<%= react_component('ImageModal') %>
+<%= react_component('ImageModal', {
+  class: "gallery-thumbnail-grid",
+  images: [
+    { src: 'https://tinyurl.com/y9ymae8n' },
+    { src: 'https://tinyurl.com/y725o6sf' },
+    { src: 'https://tinyurl.com/y8cuqbck' },
+    { src: 'https://tinyurl.com/y8ntxogj' }
+  ]
+}) %>
+<%= react_component('About') %>
+<%= image_tag  "https://tinyurl.com/yco6pwkx", class: "home-image-cover" %>

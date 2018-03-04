@@ -1,21 +1,33 @@
 import React from "react";
+import TextSection from '../textSection/textSection';
 import "./vision.css";
 
 class Vision extends React.Component {
   render() {
     return (
-      <div className="vision">
-        <h2>Our Vision</h2>
+      <TextSection
+        title="Our Vision"
+        className="vision"
+      >
         <p>
-          After an unfulfilling career at the bank, I decided to quit my job and
-          revisit my passion since high school. After meeting up with a few
-          designers at popular trade shows, I decided Camosun Fine Furniture was
-          the right place to pursue my passion in woodworking. Instantly drawn
-          by the satisfaction of creating beautiful functional art, there was no
-          turning back. Over the years of woodworking, the satisfaction of
-          furniture making has become a necessity.
+          At Outlier Joinery, our purpose is to create uncompromising
+          furniture that marries design and functionality into one
+          cohesive piece. Every project begins with an idea;
+          an inspiration that brings us on a journey of sketches
+          to hand work that realizes the design into its physical form.
+          Every design and joinery is handcrafted to the potential of each
+          piece accentuating the natural beauty and tenacity of the wood.
+          All of our materials are hand picked from local lumber yards to
+          accentuate our clients’ needs and to ensure waste is minimized.
+          Our designs gravitate towards our appreciation for Japanese joinery
+          as well as Mid-century modern and Scandinavian designs.
+          Nonetheless we also enjoy collaborating with our clients to
+          build the piece that suits their needs.
         </p>
-      </div>
+        <p>
+          Being aware of the strenuous efforts and time it takes for materials to grow, we make great efforts to reduce waste and fully utilize the materials that are harvested.
+        </p>
+      </TextSection>
     );
   }
 }

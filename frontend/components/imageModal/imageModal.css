@@ -1,0 +1,15 @@
+.gallery-flex-3 a {
+  line-height: 0px;
+}
+
+.gallery-thumbnail-grid {
+  max-width: 50% !important;
+}
+
+.gallery-thumbnail-single {
+  max-width: 100% !important;
+}
+
+.sub-gallery-section {
+  text-align: center !important;
+}

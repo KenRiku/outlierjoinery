@@ -3,7 +3,8 @@
 // of the page.
 import Hero from "components/hero";
 import Vision from "components/vision/vision";
+import About from "components/about/about";
 import ImageModal from "components/imageModal/imageModal";
 import WebpackerReact from "webpacker-react";
 
-WebpackerReact.setup({ Hero, Vision, ImageModal });
+WebpackerReact.setup({ Hero, Vision, About, ImageModal });
