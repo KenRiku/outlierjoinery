@@ -12,6 +12,7 @@ class Hello extends React.Component {
         minHeight="100vh"
         parallaxOffset={100}
         imageSrc='https://tinyurl.com/yc9yabcx'
+        className="hero-background"
       >
         <img src="https://tinyurl.com/ybgcmfzp" className="hero-logo" />
       </Hero>)
